@@ -81,7 +81,7 @@ services:
       - "libpostaldata:/usr/share/libpostal"
       - "${DATA_DIR}:/data"
   pip:
-    image: pelias/pip-service:nodejs10
+    image: pelias/pip-service
     container_name: pelias_pip-service
     restart: always
     environment: [ "PORT=4200" ]
